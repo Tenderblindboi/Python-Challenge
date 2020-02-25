@@ -37,7 +37,12 @@ average=(total/count)
 maxdate=date[MaxI]
 mindate=date[MinI]
 
+file = open("stuff.txt","w") 
+
 str=f'Finacial Analysis\n ------------------- \nTotal Months:{count}\nTotal:${total}\nAverage change:${average}\nGreatest Increase in Proftits: {maxdate} (${maximum})\nGreatest Decrease in Profits: {mindate} (${minimum})'
 print(str)
+file.write(str)
+file.close()
+
 
 
